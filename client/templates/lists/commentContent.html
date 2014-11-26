@@ -1,0 +1,13 @@
+<template name="commentContent">
+
+	<div class="commentDisplay">
+	{{#each returnCommentText}}
+
+	<span class="createdBy">{{author}} </span><span class="heavy">{{date}}</span><br />
+	<span class="commentStyle">{{commentText}}</span>
+	<br />
+
+	{{/each}}
+	</div>
+
+</template>

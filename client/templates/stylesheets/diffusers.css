@@ -1,0 +1,251 @@
+/* CSS declarations go here */
+
+*
+{
+    font-family: 'Open Sans', sans-serif;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+    box-sizing: border-box;
+
+}
+
+.col-md-8.head{
+width: 65.5%;
+}
+.nav.nav-pills li{
+    padding-left: 15px;
+        padding-right: 15px;
+
+}
+.nav.nav-pills li a:hover{
+padding-left:15px;
+padding-right: 15px;
+color: black;
+
+}
+.todayBlock
+{
+    float: left;
+
+    width: 100%;
+}
+.todoEntry
+{
+    font-size: 25px;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+}
+
+.snippetEntry{
+    font-size: 25px;
+    height: 40px;
+    text-align: center;
+    border-radius: 1px;
+    width: 100%;  
+}
+
+.listTitle
+{
+    font-size: 36px;
+    text-align: center;
+}
+.completedTitle{
+    font-size: 24px;
+    text-align: center;
+}
+.linksTitle
+{
+    font-size: 36px;
+    text-align: center;
+    width: 100%;
+}
+.selected
+{
+    padding: 0px 5px 0px 5px;
+    border-radius: 2px;
+    background: #ddd;
+    transition: .02s;
+
+}
+.selectedSnippet{
+background: #f0f0f0;
+border-radius: 3px;
+}
+.selectedLink{
+    padding: 5px 70px 5px 10px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    box-shadow: inset 0px 0px 7px #f0f0f0;
+
+
+
+}
+.itemSelect
+{
+    padding: 5px;
+}
+.todaysItems ul li.itemSelect
+{
+    padding: 3px;
+background: #f0f0f0;
+margin-top: 3px;
+margin-bottom: 3px;
+}
+.snippetBox{
+    margin-left: 10%;
+    margin-top: 10px;
+    font-size: 18px;
+    border-radius: 3px;
+
+}
+.allSnippets{
+    width: 100%;
+}
+.snippetVotes{
+    float: left;
+    width: 28px;
+    margin-top: 5px;
+    margin-left: 20px;
+
+}
+.btn-default.btn-raised.upvote{
+padding: 0;
+}
+.btn-default.btn-raised.downvote{
+padding: 0;
+}
+.snippetContent{
+    float: left;
+    margin-top: 5px;
+
+
+}
+.upvote{
+width: 28px;
+
+}
+.downvote{
+width: 28px;
+
+}
+.voteCount{
+margin-left:11px;
+margin-top: 5px;
+}
+.linkSelect
+{
+    padding: 10px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+.removeSnippet{
+    float:right;
+    padding: 5px;
+
+    font-size: 10px;
+    margin-right: 20px;
+box-shadow: 2px 2px 3px #f0f0f0;
+
+}
+.removeSnippet.btn-default.btn-raised:hover{
+box-shadow: -2px 2px 5px #ddd;
+background-color: #fff;
+}
+.removeTodoItem.btn-default.btn-raised{
+ transition: box-shadow .2s   
+}
+.removeTodoItem.btn-default.btn-raised:hover{
+box-shadow: -2px 2px 5px #ddd;
+background-color: white;
+}
+.submitComment{
+    font-size: 12px;
+}
+.removeLink{
+    float:left;
+    padding: 10px;
+    box-shadow: 1px 1px 1px #ccc;
+    font-size: 14px;
+    margin-top: 10px;
+
+}
+.removeTodoItem{
+    width: 100%;
+}  
+.todayHolder{
+    width: 100%;
+} 
+
+.listFormat{
+    margin-top: 10px;
+    width: 73%;
+    float: left;
+}
+.completedListFormat{
+    margin-top: 28px;
+    width: 24%;
+    float: right;
+}
+
+.addComment{
+
+     padding: 5px;
+     font-size: 10px;
+     margin-top: 10px;
+}
+
+.typeComment{
+    margin-left: 10%;
+    width: 40%;
+    height: 50px;
+    margin-top: 10px;
+    border-radius: 1px;
+}
+.commentDisplay{
+    width: 40%;
+    margin-left: 10%;
+}
+
+.heavy{
+    color: #888;
+}
+.commentStyle{
+
+
+}
+.createdBy{
+    color: blue;
+
+}
+.authorStyle{
+    color: blue;
+}
+.completedItems{
+    text-align: left;
+background: #f0f0f0;
+    margin-bottom: 5px;
+    border-radius: 2px;
+}
+.todaysItems{
+    text-align: left;
+    font-size: 30px;
+}
+.instructions{
+    font-size: 14px;
+}
+
+.notifications{
+    font-size: 16px;
+    margin-top: 20%;
+}
+.signInStyle{
+    width: 30%;
+    margin-left: 30%;
+}
+.nav.nav-pills ul li{
+
+}

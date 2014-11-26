@@ -1,0 +1,23 @@
+<template name="coolLinks">
+{{#if currentUser}}
+
+	<div class="linksTitle">
+		<p>Cool Links</p>
+	</div>
+
+	<input type="text" class="snippetEntry" placeholder="Enter a Link" autofocus>
+	<div class="linkFormat">
+		
+			{{#each returnAllItems}}
+			<div class="linkSelect">
+				<span class="{{highlightedItem}}">
+					<a href="{{item}}"> {{item}} </a>
+				</span>
+			</div>
+			{{/each}}
+		
+		<input type="button" value="Remove Link" class="removeLink">
+	</div>
+{{/if}}
+
+</template>

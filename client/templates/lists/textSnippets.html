@@ -1,0 +1,48 @@
+<template name="textSnippets">
+{{#if currentUser}}
+
+	<div class="listTitle">
+		<p>Text Snippets</p>
+	</div>
+
+	<input type="text" class="snippetEntry" placeholder="Enter a Snippet" autofocus>
+	<div class="allSnippets">
+		{{#each returnAllItems}}
+		<div class="snippetContent {{highlightedItem}}">
+
+			<ul>
+				<div class="snippetVotes">
+					<button class="btn btn-default btn-raised upvote">	<span class="glyphicon glyphicon-arrow-up"></span></button>				
+					<p class="voteCount">
+					{{total}}
+				</p>
+
+				<button class="btn btn-default btn-raised downvote">	<span class="glyphicon glyphicon-arrow-down"></span></button>				
+				</div>
+
+
+				<li class="snippetBox">
+					<span class="authorStyle">{{author}}</span><br />
+					<span>{{item}}</span>
+					<br />
+					<button class="addComment btn btn-default btn-raised">Add Comment </button>
+					<button class="removeSnippet btn btn-default btn-raised">Remove Snippet </button>
+				</li>
+				
+				<br />
+				{{> commentContent}}
+
+				{{#if showCommentBox}}
+				{{> commentBox}}
+				{{/if}}
+
+
+
+
+		
+			</ul>
+		</div>
+		{{/each}}
+		</div>
+		{{/if}}
+</template>

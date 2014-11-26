@@ -1,0 +1,41 @@
+<template name="thisWeek">
+	{{#if currentUser}}
+	<div class="listFormat">
+		<div class="listTitle">
+			<p>To Do This Week</p>
+		</div>
+		<input type="text" class="todoEntry" placeholder="Enter a To Do Item" autofocus>
+		<br />
+		<div class="todaysItems">
+			<ul>
+				{{#each returnAllItems}}
+				<li class="itemSelect">
+					<input type="radio" name="radAnswer" class="completeItem">
+					<span >{{item}}</span>
+				</li>
+				{{/each}}
+				<span class="instructions">(Select an Item and Press Enter To Mark as Completed)</span>
+			</ul>
+		</div>
+	</div>
+
+	<div class="completedListFormat">
+		<div class="completedTitle">
+
+			<p>Completed</p>
+		</div>
+		<div class="completedItems">
+			<ul>
+				{{#each returnCompletedItems}}
+				<li class="itemSelect {{highlightedItem}}">
+					<span class="glyphicon glyphicon-ok"></span>
+					{{completed}}
+				</li>
+				{{/each}}
+			</ul>
+		</div>
+		<button class="removeTodoItem btn btn-default btn-raised">Remove Selected Task</button>
+
+	</div>
+	{{/if}}
+</template>
